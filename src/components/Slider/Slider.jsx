@@ -86,7 +86,6 @@ export const Slider = () => {
 
   return (
     <div className="slider__wrapper">
-      {/* <script>{detectKeyPress()}</script> */}
       <div className="slide_display">
         <div className="slide__content">{slidesDeck[slideNumber]}</div>
         <div className="slide__slidenumber">{getSlideNumber()}</div>

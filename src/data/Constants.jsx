@@ -7,8 +7,8 @@ export const TAG_LINE = "Frontend Web Developer";
 
 export const SKILLS = [
   {
-    type: "Frontend skills",
-    value: [
+    item: "Frontend skills",
+    subItem: [
       "HTML5",
       "CSS3, SCSS, Material UI",
       "JavaScript, ES6 and later ",
@@ -17,16 +17,16 @@ export const SKILLS = [
     ],
   },
   {
-    type: "Backend skills",
-    value: ["Node.js", "Express.js"],
+    item: "Backend skills",
+    subItem: ["Node.js", "Express.js"],
   },
   {
-    type: "Database",
-    value: ["mongoDB"],
+    item: "Database",
+    subItem: ["mongoDB"],
   },
   {
-    type: "Other skills",
-    value: ["Jest", "Webpack"],
+    item: "Other skills",
+    subItem: ["Jest", "Webpack"],
   },
 ];
 
