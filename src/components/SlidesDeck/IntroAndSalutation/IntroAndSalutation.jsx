@@ -41,7 +41,7 @@ export const FinalSalutation = () => {
   return (
     <SlideBlank>
       <div className="centered-container finalsalutation__content">
-        <h2 className="heading">Thank you!</h2>
+        <h2 className="heading">Thank you</h2>
       </div>
     </SlideBlank>
   );
