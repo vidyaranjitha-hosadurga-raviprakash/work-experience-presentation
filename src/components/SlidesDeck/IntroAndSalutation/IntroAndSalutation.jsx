@@ -23,13 +23,7 @@ export const IntroductionSlide = () => {
         </div>
         <div className="introduction__date">
           {date}
-          <sup
-            style={{
-              fontSize: "1rem",
-            }}
-          >
-            {getOrdinal(date)}
-          </sup>
+          <sup>{getOrdinal(date)}</sup>
           {` ${rest.join(" ")}`}
         </div>
       </div>
