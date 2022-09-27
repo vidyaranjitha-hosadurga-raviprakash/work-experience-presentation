@@ -4,14 +4,12 @@ export const ListItemsDisplay = ({ items }) => {
     <>
       {items.map(({ type, value }, index) => {
         return (
-          <>
-            <ul key={index} className="list_items">
-              <li>
-                {`${type}:`}
-                <SubListItemsDisplay items={value} />
-              </li>
-            </ul>
-          </>
+          <ul key={index} className="list_items">
+            <li>
+              {`${type}:`}
+              <SubListItemsDisplay items={value} />
+            </li>
+          </ul>
         );
       })}
     </>

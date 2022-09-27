@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import "@components/Slider/Slider.scss";
 import {
@@ -11,6 +11,8 @@ import {
   FinalSalutation,
 } from "@components/SlidesDeck";
 import { SlideControls } from "@components/Slider";
+import { detectKeyPress } from "@/helpers/commonOperationsHelper";
+import { KEYS_CODE } from "@/data/Constants";
 
 const slidesDeck = [
   <IntroductionSlide />,
@@ -25,6 +27,9 @@ const slidesDeck = [
 export const Slider = () => {
   // State variable for maintaing slide num
   const [slideNumber, setSliderNumber] = useState(0);
+
+  // Ref to access the updated slideNumber in the callbacks.
+  const slideNumberRef = useRef(slideNumber);
 
   const prevSlide = () => {
     setSliderNumber((prev) => prev - 1);
@@ -48,8 +53,40 @@ export const Slider = () => {
       return `${slideNumber + 1}/${totalSlides}`;
     }
   };
+
+  useEffect(() => {
+    slideNumberRef.current = slideNumber;
+  }, [slideNumber]);
+
+  // Arrow-keys functionality for the slides change
+  useEffect(() => {
+    window.addEventListener("keydown", function (e) {
+      if (
+        e.keyCode === KEYS_CODE.leftArrow ||
+        e.keyCode === KEYS_CODE.downArrow
+      ) {
+        if (slideNumberRef.current === 0) {
+          return;
+        }
+        return prevSlide();
+      }
+
+      if (
+        e.keyCode === KEYS_CODE.rightArrow ||
+        e.keyCode === KEYS_CODE.upArrow
+      ) {
+        if (slideNumberRef.current === slidesDeck.length - 1) {
+          return;
+        }
+        return nextSlide();
+      }
+    });
+    () => window.removeEventListener("keydown");
+  }, []);
+
   return (
     <div className="slider__wrapper">
+      {/* <script>{detectKeyPress()}</script> */}
       <div className="slide_display">
         <div className="slide__content">{slidesDeck[slideNumber]}</div>
         <div className="slide__slidenumber">{getSlideNumber()}</div>

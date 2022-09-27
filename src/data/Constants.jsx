@@ -29,3 +29,10 @@ export const SKILLS = [
     value: ["Jest", "Webpack"],
   },
 ];
+
+export const KEYS_CODE = {
+  leftArrow: 37,
+  upArrow: 38,
+  rightArrow: 39,
+  downArrow: 40,
+};
