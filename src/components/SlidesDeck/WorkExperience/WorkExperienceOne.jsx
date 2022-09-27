@@ -13,10 +13,12 @@ export const WorkExperienceOne = () => {
 
       {/* Content */}
       <div className="workexperienceone__content">
-        <p>
-          Major contribution in front-end development of web application, also
-          contributed to backend team.
-        </p>
+        <div>
+          <p>
+            Major contribution in front-end development of web application, also
+            contributed to backend team.
+          </p>
+        </div>
 
         <div className="workexperience__skills">
           <h3 className="slide-subheading">Skills:</h3>

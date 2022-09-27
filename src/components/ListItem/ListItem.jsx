@@ -1,20 +1,20 @@
 import React from "react";
 export const ListItemsDisplay = ({ items }) => {
   return (
-    <div>
-      <div>
-        {items.map(({ type, value }, index) => {
-          return (
-            <ul key={index}>
+    <>
+      {items.map(({ type, value }, index) => {
+        return (
+          <>
+            <ul key={index} className="list_items">
               <li>
                 {`${type}:`}
                 <SubListItemsDisplay items={value} />
               </li>
             </ul>
-          );
-        })}
-      </div>
-    </div>
+          </>
+        );
+      })}
+    </>
   );
 };
 

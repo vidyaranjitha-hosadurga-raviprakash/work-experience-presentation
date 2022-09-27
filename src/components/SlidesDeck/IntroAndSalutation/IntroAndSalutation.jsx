@@ -25,7 +25,7 @@ export const IntroductionSlide = () => {
           {date}
           <sup
             style={{
-              fontSize: "0.6rem",
+              fontSize: "1rem",
             }}
           >
             {getOrdinal(date)}

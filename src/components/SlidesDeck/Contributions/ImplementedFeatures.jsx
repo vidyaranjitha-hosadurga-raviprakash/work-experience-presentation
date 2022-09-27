@@ -14,7 +14,9 @@ export const FeatureOne = () => {
       <div className="featureone__title">Implemented Features</div>
       <div className="featureone__content">
         <div className="feature__backup">
-          <h3 className="slide-subheading">Backup feature:</h3>
+          <div>
+            <h3 className="slide-subheading">Backup feature:</h3>
+          </div>
           <div>
             <ul className="list_items">
               <li>

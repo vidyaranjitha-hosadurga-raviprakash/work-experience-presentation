@@ -24,7 +24,7 @@ const slidesDeck = [
 
 export const Slider = () => {
   // State variable for maintaing slide num
-  const [slideNumber, setSliderNumber] = useState(4);
+  const [slideNumber, setSliderNumber] = useState(0);
 
   const prevSlide = () => {
     setSliderNumber((prev) => prev - 1);

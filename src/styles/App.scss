@@ -15,6 +15,11 @@ body {
   --subheading: 1.2rem;
   --slide-heading: 1.5rem;
   --body-font-size: 1rem;
+
+  --heading-lg: 3rem;
+  --subheading-lg: 1.8rem;
+  --slide-heading-lg: 2.1rem;
+  --body-font-size-lg: 1.5rem;
 }
 
 // Flex variants
@@ -43,12 +48,12 @@ body {
 
 // Heading variants
 .heading {
-  font-size: var(--heading) !important;
+  font-size: var(--heading);
   color: var(--primary-color);
 }
 
 .subheading {
-  font-size: var(--subheading) !important;
+  font-size: var(--subheading);
 }
 
 // Slide Layouts
@@ -72,22 +77,17 @@ body {
 
 .slide-heading {
   color: var(--primary-color);
-  font-size: var(--slide-heading) !important;
+  font-size: var(--slide-heading);
 }
 
 .slide-subheading {
-  margin-bottom: 1rem;
-  font-size: var(--subheading) !important;
+  margin-bottom: 1.5rem;
+  font-size: var(--subheading);
   text-decoration: underline;
 }
 
 .slide-content {
   font-size: var(--body-font-size);
-  line-height: 1rem;
-}
-
-.slide-content * {
-  margin-top: 0rem;
 }
 
 // Common
@@ -96,10 +96,6 @@ body {
   @include flex-align-center;
   height: 100%;
   width: 100%;
-}
-
-ul {
-  padding-inline-start: 1rem;
 }
 
 .list_items {
@@ -155,4 +151,60 @@ h5,
 h6 {
   font-weight: normal;
   margin: 0rem 0rem;
+}
+
+@media screen and (min-width: 620px) {
+  body {
+    font-size: var(--body-font-size-lg);
+  }
+
+  .slide-blank {
+    padding: 2rem 2rem;
+  }
+  .slide-heading-content {
+    gap: 1.5rem;
+    padding: 2rem 2rem;
+  }
+  .slide_display {
+    height: 88vh;
+  }
+
+  .heading {
+    font-size: var(--heading-lg);
+  }
+
+  .subheading {
+    font-size: var(--subheading-lg);
+  }
+
+  .slide-heading {
+    font-size: var(--slide-heading-lg);
+  }
+
+  .slide-subheading {
+    font-size: var(--subheading-lg);
+  }
+
+  .slide-content {
+    font-size: var(--body-font-size-lg);
+  }
+
+  li {
+    line-height: 1.5rem;
+  }
+
+  .list_items {
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+
+  .list_subitems {
+    margin: 1rem 0rem 0rem 1rem;
+    gap: 1rem;
+  }
+
+  .btn-round {
+    height: 30px;
+    width: 30px;
+  }
 }
