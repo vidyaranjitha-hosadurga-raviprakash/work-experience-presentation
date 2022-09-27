@@ -86,7 +86,7 @@ export const Slider = () => {
 
   return (
     <div className="slider__wrapper">
-      <div className="slide_display">
+      <div className="slide__display">
         <div className="slide__content">{slidesDeck[slideNumber]}</div>
         <div className="slide__slidenumber">{getSlideNumber()}</div>
       </div>
