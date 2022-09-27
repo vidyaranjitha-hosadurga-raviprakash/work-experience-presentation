@@ -11,11 +11,13 @@
 
 .slide__content ul,
 .slide__content p {
-  margin-block-start: 0rem;
+  margin-block-start: 0px;
 }
 
 .slide__content ul {
-  padding-inline-start: 1rem;
+  padding-inline-start: 0px;
+  position: relative;
+  left: 20px;
 }
 .slide_controls {
   gap: 3rem;
