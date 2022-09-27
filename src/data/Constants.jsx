@@ -25,7 +25,7 @@ export const SKILLS = [
     value: ["mongoDB"],
   },
   {
-    type: "Others",
+    type: "Other skills",
     value: ["Jest", "Webpack"],
   },
 ];
