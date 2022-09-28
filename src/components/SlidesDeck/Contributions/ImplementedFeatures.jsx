@@ -42,7 +42,7 @@ const featureRestore = {
 const featureUserMgmt = {
   items: [
     {
-      item: `Allows the creation of different types of users, password reset`,
+      item: `Allows the creation of users, password reset`,
       subItem: [],
     },
   ],
