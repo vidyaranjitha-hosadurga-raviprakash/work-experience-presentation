@@ -82,6 +82,7 @@ export const FeatureTwo = () => {
             style={{
               width: "85%",
               border: "var(--border)",
+              padding: "0.5rem 1rem",
             }}
           ></img>
           <figcaption>Backup feature use case diagram</figcaption>
