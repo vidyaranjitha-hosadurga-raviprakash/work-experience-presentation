@@ -19,24 +19,3 @@ export const getOrdinal = (number) => {
   }
   return ordinalValues[selector];
 };
-
-export const detectKeyPress = () => {
-  console.log("detectKeyPress");
-  return window.addEventListener("keydown", function (e) {
-    return e.keyCode;
-    // switch (e.keyCode) {
-    //   case 37:
-    //     alert("left");
-    //     break;
-    //   case 38:
-    //     alert("up");
-    //     break;
-    //   case 39:
-    //     alert("right");
-    //     break;
-    //   case 40:
-    //     alert("down");
-    //     break;
-    // }
-  });
-};

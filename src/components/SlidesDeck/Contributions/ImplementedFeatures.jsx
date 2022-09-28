@@ -2,8 +2,9 @@ import React from "react";
 
 import { SlideTitleContent, SlideBlank } from "@components";
 
-import "@components/SlidesDeck/Contributions/Contributions.scss";
 import { ListItemsDisplay } from "@components";
+import backupUseCaseDiagram from "@/assets/image/feat_backupUseCaseDiagram.jpg";
+import "@components/SlidesDeck/Contributions/Contributions.scss";
 
 const featureBackup = {
   items: [
@@ -47,6 +48,15 @@ const featureUserMgmt = {
     },
   ],
 };
+
+const featureContextHelp = {
+  items: [
+    {
+      item: `The online user document that provides the right context for a given page `,
+      subItem: [],
+    },
+  ],
+};
 export const FeatureOne = () => {
   return (
     <SlideTitleContent>
@@ -58,6 +68,26 @@ export const FeatureOne = () => {
         </div>
       </div>
     </SlideTitleContent>
+  );
+};
+
+export const FeatureTwo = () => {
+  return (
+    <SlideBlank>
+      <div className="featuretwo__content">
+        <div className="featuretwo_backupfeatDiagram centered-container">
+          <img
+            src={backupUseCaseDiagram}
+            alt="Backup feature use case diagram"
+            style={{
+              width: "85%",
+              border: "var(--border)",
+            }}
+          ></img>
+          <figcaption>Backup feature use case diagram</figcaption>
+        </div>
+      </div>
+    </SlideBlank>
   );
 };
 
@@ -73,6 +103,11 @@ export const FeatureThree = () => {
         <div className="feature__usermanagement">
           <h3 className="slide-subheading">User management feature:</h3>
           <ListItemsDisplay {...featureUserMgmt} />
+        </div>
+        <div className="spacer" />
+        <div className="feature__contexthelp">
+          <h3 className="slide-subheading">Context-sensitive help:</h3>
+          <ListItemsDisplay {...featureContextHelp} />
         </div>
       </div>
     </SlideBlank>

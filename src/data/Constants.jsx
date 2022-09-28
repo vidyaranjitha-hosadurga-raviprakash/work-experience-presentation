@@ -12,7 +12,7 @@ export const SKILLS = [
       "HTML5",
       "CSS3, SCSS, Material UI",
       "JavaScript, ES6 and later ",
-      "React.js",
+      "React.js and Redux",
       "TypeScript",
     ],
   },

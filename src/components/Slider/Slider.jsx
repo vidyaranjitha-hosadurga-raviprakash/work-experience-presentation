@@ -7,11 +7,11 @@ import {
   WorkExperienceTwo,
   Contributions,
   FeatureOne,
+  FeatureTwo,
   FeatureThree,
   FinalSalutation,
 } from "@components/SlidesDeck";
 import { SlideControls } from "@components/Slider";
-import { detectKeyPress } from "@/helpers/commonOperationsHelper";
 import { KEYS_CODE } from "@/data/Constants";
 
 const slidesDeck = [
@@ -20,6 +20,7 @@ const slidesDeck = [
   <WorkExperienceTwo />,
   <Contributions />,
   <FeatureOne />,
+  <FeatureTwo />,
   <FeatureThree />,
   <FinalSalutation />,
 ];
