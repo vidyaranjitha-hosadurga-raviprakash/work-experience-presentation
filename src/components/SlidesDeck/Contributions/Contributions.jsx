@@ -17,7 +17,11 @@ export const Contributions = () => {
       },
       {
         item: `Features implementation:`,
-        subItem: ["Backup", "Restore", "User managment"],
+        subItem: [
+          "Backup and Restore",
+          "User managment",
+          "Context-sensitive help",
+        ],
       },
       {
         item: `Web application performance analysis using Lighthouse, React

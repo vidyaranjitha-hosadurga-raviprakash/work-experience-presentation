@@ -52,7 +52,7 @@ const featureUserMgmt = {
 const featureContextHelp = {
   items: [
     {
-      item: `The online user document that provides the right context for a given page `,
+      item: `Online user document that provides the right context for a given page`,
       subItem: [],
     },
   ],
