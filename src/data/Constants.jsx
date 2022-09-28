@@ -10,7 +10,7 @@ export const SKILLS = [
     item: "Frontend skills",
     subItem: [
       "HTML5",
-      "CSS3, SCSS, Material UI",
+      "CSS3, SCSS, and Material UI",
       "JavaScript, ES6 and later ",
       "React.js and Redux",
       "TypeScript",
