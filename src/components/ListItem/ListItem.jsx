@@ -1,18 +1,16 @@
 import React from "react";
 export const ListItemsDisplay = ({ items }) => {
   return (
-    <>
+    <ul className="list__items">
       {items.map(({ item, subItem }, index) => {
         return (
-          <ul key={index} className="list_items">
-            <li>
-              {`${item}`}
-              <SubListItemsDisplay items={subItem} />
-            </li>
-          </ul>
+          <li key={index}>
+            {`${item}`}
+            <SubListItemsDisplay items={subItem} />
+          </li>
         );
       })}
-    </>
+    </ul>
   );
 };
 
